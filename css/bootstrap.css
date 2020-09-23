@@ -5314,10 +5314,6 @@ a.badge-dark:focus, a.badge-dark.focus {
   align-items: flex-start;
 }
 
-.media-body {
-  -ms-flex: 1;
-  flex: 1;
-}
 
 .list-group {
   display: -ms-flexbox;
