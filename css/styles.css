@@ -1622,23 +1622,7 @@ a:hover.back-to-top {
 }
 
 
-@media (max-width: 992px){
-	.cards-1 .card,.cards-2 .card{
-		margin-bottom: 4rem;
-	}
-	.top-nav-collapse .nav-item.button a{
-		background-color:#00bfd8!important;
-		margin: 0 auto;
-		margin-bottom: 12px;
-		width: 100px;
-	}
-	.top-nav-collapse .nav-item.button a{
-		color: #f7fcfd!important;
-	}
-	.navbar-custom .navbar-nav{
-		text-align: center;
-	}
-}
+
 /*****************************/
 /*     20. Media Queries     */
 /*****************************/	
@@ -1765,7 +1749,15 @@ a:hover.back-to-top {
 /* end of min-width width 768px */
 
 /* Min-width width 992px */
-@media (min-width: 992px) {
+@media (min-width: 992px){
+	.navbar-expand-lg .navbar-nav .nav-link{
+	text-shadow: -2px 2px 2px rgba(0,0,0,.3);
+
+}
+.top-nav-collapse .navbar-nav .nav-link,.navbar-expand-lg .navbar-nav .nav-item.button a{
+	text-shadow: none;
+
+}
 	/* Navigation */
 	.nav-item.button:hover{
 		background-color:#00bfd8!important;
@@ -2095,6 +2087,7 @@ a:hover.back-to-top {
 /* end of min-width width 992px */
 
 .team-wrap .team-member{
+	width: calc(33% - 7px);
 	margin-bottom: 50px;
 	
 
@@ -2303,4 +2296,38 @@ a:hover.back-to-top {
 .nav-item.button a{
 	color: #00bfd8!important;
 
+}
+@media (max-width: 768px){
+	.cards-1 .card,.cards-2 .card{
+		margin-bottom: 4rem;
+	}
+	.top-nav-collapse .nav-item.button a{
+		background-color:#00bfd8!important;
+		margin: 0 auto;
+		margin-bottom: 12px;
+		width: 100px;
+	}
+	.top-nav-collapse .nav-item.button a{
+		color: #f7fcfd!important;
+	}
+	.navbar-custom .navbar-nav{
+		text-align: center;
+	}
+}
+@media (max-width: 992px){
+	.cards-1 .card,.cards-2 .card{
+		margin-bottom: 4rem;
+	}
+	.navbar-custom .navbar-nav{
+		text-align: center;
+	}
+	.top-nav-collapse .nav-item.button a{
+		background-color:#00bfd8!important;
+		margin: 0 auto;
+		margin-bottom: 12px;
+		width: 100px;
+	}
+	.top-nav-collapse .nav-item.button a{
+		color: #f7fcfd!important;
+	}
 }
