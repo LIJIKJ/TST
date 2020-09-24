@@ -2523,3 +2523,19 @@ a:hover.back-to-top {
         color: #f7fcfd!important;
     }
 }
+
+.error .nav-item.button a {
+    margin: 0 auto;
+    width: 150px;
+    color: #f7fcfd!important;
+    font: 600 1rem/1rem "Raleway", sans-serif;
+    text-decoration: none;
+    background-color: #22A5FF!important;
+}
+
+.error .nav-item.button a:hover {
+    background-color: #f7fcfd!important;
+    font: 600 1rem/1rem "Raleway", sans-serif;
+    text-decoration: none;
+    color: #22A5FF!important;
+}
