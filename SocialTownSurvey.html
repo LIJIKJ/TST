@@ -1,0 +1,136 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>The Social Town Survey</title>
+   <link rel = "icon" href = "tstLogo.svg"
+        type="image/svg+xml"> 
+   <link rel="stylesheet" href="SocialTownSurvey.css">
+</head>
+<body>
+    <img src="tstLogo.svg" 
+        alt="The Social Town Logo" width="500" height="150" >
+    <div class = "surveyFormContainer">
+        <h1>The Social Town Company Survey</h1>
+        <h4>Please spare a few minutes to fill out the survey</h4>
+        <hr>
+        <form id="tstSurvey" method="POST" 
+            action="https://script.google.com/macros/s/AKfycbyLmLxD2PYBDqRHioFBxaLwVun4-qb2pN381WNCid5bjDZaJZT4/exec">
+            <div class="formRow">
+                <div class="labelColumn">
+                    <label for="companyName">1. Name of your company:</label>
+                </div>
+                <div class="inputColumn">
+                    <input type="text" id="companyName" name="companyName" 
+                    placeholder="Please enter the name of your company">
+                </div>
+            </div>
+            <div class = "formRadio">
+                <p>2. Which sector does your company belong to? </p>
+                <input type="radio" id="primary" name="companySector" value="primary">
+                <label for="primary">Primary (Related to raw materials e.g. mining, farming and fishing)</label><br>
+                <input type="radio" id="secondary" name="companySector" value="secondary">
+                <label for="secondary"> Secondary (Related to manufacturing)</label><br>
+                <input type="radio" id="tertiary" name="companySector" value="tertiary">
+                <label for="tertiary"> Tertiary (Services e.g. Schools, Hospitals)</label><br>
+                <input type="radio" id="quaternary" name="companySector" value="quaternary">
+                <label for="quaternary">Quaternary (Research and development industries e.g. IT.)</label><br>
+            </div>
+            <div class = "formRadio">
+                <p>3. The primary reason why your company undertakes CSR activities is: </p>
+                <input type="radio" id="socialCommitment" name="reasonForCSR" value="socialCommitment">
+                <label for="socialCommitment">Social Commitment</label><br>
+                <input type="radio" id="legalMandate" name="reasonForCSR" value="legalMandate">
+                <label for="legalMandate"> Legal Mandate</label><br>
+                <input type="radio" id="employeeEngagement" name="reasonForCSR" value="employeeEngagement">
+                <label for="employeeEngagement"> Employee Engagement</label><br>
+            </div>
+            <div class = "formRadio">
+                <p>4. What best describes your company's CSR strategy?</p>
+                <input type="radio" id="planOwnCSR" name="companyCSRStrategy" value="planOwnCSR">
+                <label for="planOwnCSR"> We create/plan/execute our own CSR initiatives. </label><br>
+                <input type="radio" id="donateToNGOs" name="companyCSRStrategy" value="donatetoNGOs">
+                <label for="donatetoNGOs">We donate funds to NGOs or voluntary organisations</label><br>
+                <input type="radio" id="both" name="companyCSRStrategy" value="both">
+                <label for="both">Combination of A and B</label><br>
+            </div>
+            <div class = "formRadio">
+                <p>5. If you run your own CSR initiatives, how do you find the required manpower?</p>
+                <input type="radio" id="departmentDedicatedToCSR" name="fundForOwnCSR" value="departmentDedicatedToCSR">
+                <label for="departmentDedicatedToCSR"> We have a department/team dedicated to CSR. </label><br>
+                <input type="radio" id="deputeEmployees" name="fundForOwnCSR" value="deputeEmployees">
+                <label for="deputeEmployees">We depute our employees (from various departments) to take care of initiatives.</label><br>
+                <input type="radio" id="hireTemporaryStaff" name="fundForOwnCSR" value="hireTemporaryStaff">
+                <label for="hireTemporaryStaff">We hire temporary staff to run specific initiatives.</label><br>
+            </div>
+            <div class = "formRadio">
+                <p>6. Do you prepare Social Impact Reports to assess how effectively your CSR funds have benefitted the target community?</p>
+                <input type="radio" id="yes" name="prepareSocialImpactReport" value="yes">
+                <label for="yes"> Yes </label><br>
+                <input type="radio" id="no" name="prepareSocialImpactReport" value="no">
+                <label for="no">No</label><br>
+            </div>
+            <div class = "formRadio">
+                <p>7. If you do not prepare Social Impact Reports, what other measure do you use to assess the effectiveness of your CSR funds? </p>
+                <input type="radio" id="clearDocumentation" name="methodToAccessCSRFundEffectiveness" value="clearDocumentation">
+                <label for="clearDocumentation">We clearly document the expected outcome at the beginning of the project, and compare the final status with the same.</label><br>
+                <input type="radio" id="preparePCR" name="methodToAccessCSRFundEffectiveness" value="preparePCR">
+                <label for="preparePCR"> We prepare Project Completion Reports.</label><br>
+                <input type="radio" id="other" name="methodToAccessCSRFundEffectiveness" value="other">
+                <label for="other"> Other. Please specify:</label><br>
+                <input type="radio" id="noAssessmentForCSRFunds" name="methodToAccessCSRFundEffectiveness" value="noAssessmentForCSRFunds">
+                <label for="noAssessmentForCSRFunds">We do not undertake any specific assessment.</label><br>
+            </div>
+            <div class = "formRadio">
+                <p>8. Do you employ third parties (external agencies) to fulfil your CSR targets?</p>
+                <input type="radio" id="yes" name="employThirdPartyForCSR" value="yes">
+                <label for="yes"> Yes </label><br>
+                <input type="radio" id="no" name="employThirdPartyForCSR" value="no">
+                <label for="no">No</label><br>
+            </div>
+            <div class = "formRadio">
+                <p>9. If you answered yes to the previous question (#7), do you ask for social impact reports from third party organisations who fulfil your CSR targets?</p>
+                <input type="radio" id="yes" name="askSIRFromThirdParty" value="yes">
+                <label for="yes"> Yes </label><br>
+                <input type="radio" id="no" name="askSIRFromThirdParty" value="no">
+                <label for="no">No</label><br>
+            </div>
+            <div class = "formRadio">
+                <p>10. Would/Do you consider volunteering hours completed by employees of your company to be a part of your CSR assessment?</p>
+                <input type="radio" id="yes" name="considerVoluteerHoursForCSR" value="yes">
+                <label for="yes"> Yes </label><br>
+                <input type="radio" id="no" name="considerVoluteerHoursForCSR" value="no">
+                <label for="no">No</label><br>
+            </div>
+            <div class = "formRadio">
+                <p>11. Do you feel a requirement for third-party professional support in your CSR initiatives, in order to optimise transparency, resource allocation, social impact assessments etc?</p>
+                <input type="radio" id="yes" name="requireThirdPartySupportForCSR" value="yes">
+                <label for="yes"> Yes </label><br>
+                <input type="radio" id="no" name="requireThirdPartySupportForCSR" value="no">
+                <label for="no">No</label><br>
+            </div>
+            <div class = "formRadio">
+                <p>12. If an organisation is willing to provide such ground support (as mentioned in the previous question #11), would you be willing to pay them for their </p>
+                <input type="radio" id="yes" name="willingToPayThirdPartyForCSR" value="yes">
+                <label for="yes"> Yes </label><br>
+                <input type="radio" id="no" name="willingToPayThirdPartyForCSR" value="no">
+                <label for="no">No</label><br>
+            </div>
+            <div class = "formRadio">
+                <p>13. If you answered yes for question #12; which model of payment would you prefer?</p>
+                <input type="radio" id="payPerService" name="modeOfPayment" value="payPerService">
+                <label for="payPerService"> Pay per service (Individual payments related to specific projects)</label><br>
+                <input type="radio" id="subscription" name="modeOfPayment" value="subscription">
+                <label for="subscription">Subscription (Regular -monthly or quarterly- payments)</label><br>
+            </div>
+            <div class = "formRadio">
+                <label for="otherCSRRequirement">14. Do you have any other requirement that is not being met currently in the CSR area?  Please specify/elaborate as much as possible.</label>
+                <textarea id="otherCSRRequirement" name="otherCSRRequirement"></textarea>
+            </div>
+            <div class="formRow">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
