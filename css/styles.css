@@ -2536,6 +2536,14 @@ a:hover.back-to-top {
     .top-nav-collapse .nav-item.button a {
         color: #f7fcfd!important;
     }
+    .navbar-custom .nav-item .nav-link {
+        margin: 0 auto;
+    }
+    .nav-item.button a {
+        background-color: #22A5FF!important;
+        color: #f7fcfd!important;
+        margin-bottom: 12px!important;
+    }
     .navbar-custom .navbar-nav {
         text-align: center;
     }
@@ -2546,6 +2554,20 @@ a:hover.back-to-top {
         display: -webkit-flex;
         display: flex;
         flex-wrap: wrap;
+    }
+    .dropdown-menu {
+        text-align: center;
+    }
+    .ex-header {
+        padding-bottom: 3rem;
+    }
+    .navbar-custom .dropdown-items-divide-hr {
+        width: 100px;
+        height: 1px;
+        margin: 5px auto;
+        border: none;
+        background-color: #c4d8dc;
+        opacity: 0.2;
     }
 }
 
