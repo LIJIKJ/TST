@@ -1,0 +1,238 @@
+body {
+    background-color: #fff;
+    color: #919191;
+    text-align: center;
+    margin: 0;
+}
+
+.site-logo img {
+    width: auto;
+    height: 112px;
+}
+
+h1 {
+    color: #1A1A1A;
+    font: 700 2rem/2.5rem "Raleway", sans-serif;
+    margin-top: 0;
+}
+
+p {
+    font: 400 1rem/1.5rem "Raleway", sans-serif;
+    margin: 1.5rem 0 0;
+}
+
+label {
+    font: 400 1rem/2rem "Raleway", sans-serif;
+}
+
+.surveyFormContainer {
+    background-color: #f7fcfd;
+    text-align: center;
+    /* max-width: 90%; */
+    margin: auto;
+    padding: 0;
+    border-radius: 0;
+}
+
+.surveyFormContainer .form-wrapper {
+    padding: 4rem 0;
+    margin: 0 auto;
+}
+
+#tstSurvey {
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.formRow {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: left;
+}
+
+input[type=text]:focus,
+select:focus,
+textarea:focus {
+    outline: 1px solid #1a1a1a;
+}
+
+input[type=text],
+select,
+textarea {
+    width: 90%;
+    padding: 12px;
+    color: #919191;
+    border: 1px solid #919191;
+    border-radius: 4px;
+    resize: vertical;
+    font: 400 1rem/1.5rem "Raleway", sans-serif;
+    margin-left: 20px;
+}
+
+.radio-sec {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    justify-content: left;
+    align-items: baseline;
+    margin-left: 20px;
+}
+
+.radio-sec-comment {
+    flex-direction: column;
+}
+
+.radio-div-comment {
+    margin-left: 0px;
+    margin: 1.5rem 0 0rem;
+}
+
+.radio-div-comment textarea {
+    margin: 20px 0 0 20px;
+}
+
+.radio-sec input {
+    margin-right: 7px;
+}
+
+input[type=submit] {
+    background-color: #22A5FF;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+    margin: 0 auto;
+    margin-top: 2em;
+    width: 250px;
+    border: 1px solid #22A5FF;
+    font: 400 1rem/1.5rem "Raleway", sans-serif;
+}
+
+input[type=submit]:hover {
+    background-color: #f7fcfd;
+    color: #22A5FF;
+}
+
+.labelColumn {
+    float: left;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 15px;
+}
+
+.labelColumn label {
+    padding: 0;
+}
+
+.inputColumn {
+    float: left;
+    width: 100%;
+}
+
+.formRow:after,
+.formRadio:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.formRadio {
+    text-align: left;
+    padding: 0px;
+}
+
+.formRadio p {
+    margin: 1.5rem 0 0rem;
+}
+
+.radio-div {
+    margin: 20px 0 0;
+}
+
+@media screen and (max-width: 600px) {
+    .labelColumn,
+    .inputColumn {
+        width: 100%;
+        margin-top: 0;
+    }
+    input[type=submit] {
+        width: 100%;
+        margin-top: 1.5em;
+    }
+}
+
+#tstSurvey {
+    width: 90%;
+    margin: 0 auto;
+}
+
+input[type=text],
+select,
+textarea,
+.radio-div-comment textarea {
+    margin-left: 0;
+}
+
+.radio-sec {
+    margin-left: 2vw;
+}
+
+.surveyFormContainer .form-wrapper {
+    padding: 10vw 0;
+}
+
+@media (min-width: 768px) {
+    .surveyFormContainer .form-wrapper {
+        max-width: 540px;
+    }
+    #tstSurvey {
+        max-width: 440px;
+    }
+    input[type=text],
+    select,
+    textarea,
+    .radio-div-comment textarea,
+    .radio-sec {
+        margin-left: 20px;
+    }
+    .surveyFormContainer .form-wrapper {
+        padding: 4rem 0;
+    }
+}
+
+@media (min-width: 992px) {
+    .surveyFormContainer .form-wrapper {
+        max-width: 720px;
+    }
+    #tstSurvey {
+        max-width: 620px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .surveyFormContainer .form-wrapper {
+        max-width: 960px;
+    }
+    #tstSurvey {
+        max-width: 860px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .surveyFormContainer .form-wrapper {
+        max-width: 1140px;
+    }
+    #tstSurvey {
+        max-width: 1040px;
+    }
+}
