@@ -128,7 +128,7 @@ a.turquoise {
 }
 
 a.white {
-    color: #fff;
+    color: #f7fcfd;
 }
 
 .testimonial-text {
@@ -149,7 +149,7 @@ a.white {
     border: 0.125rem solid #22A5FF;
     border-radius: 2rem;
     background-color: #22A5FF;
-    color: #fff;
+    color: #f7fcfd;
     font: 700 0.75rem/0 "Raleway", sans-serif;
     text-decoration: none;
     transition: all 0.2s;
@@ -167,7 +167,7 @@ a.white {
     border: 0.125rem solid #22A5FF;
     border-radius: 2rem;
     background-color: #22A5FF;
-    color: #fff;
+    color: #f7fcfd;
     font: 700 0.75rem/0 "Raleway", sans-serif;
     text-decoration: none;
     transition: all 0.2s;
@@ -193,7 +193,7 @@ a.white {
 
 .btn-outline-reg:hover {
     background-color: #22A5FF;
-    color: #fff;
+    color: #f7fcfd;
     text-decoration: none;
 }
 
@@ -211,7 +211,7 @@ a.white {
 
 .btn-outline-lg:hover {
     background-color: #22A5FF;
-    color: #fff;
+    color: #f7fcfd;
     text-decoration: none;
 }
 
@@ -229,7 +229,7 @@ a.white {
 
 .btn-outline-sm:hover {
     background-color: #22A5FF;
-    color: #fff;
+    color: #f7fcfd;
     text-decoration: none;
 }
 
@@ -255,6 +255,10 @@ a.white {
     font: 400 0.875rem/1.375rem "Raleway", sans-serif;
     cursor: text;
     transition: all 0.2s ease;
+}
+
+input:focus {
+    outline: none!important;
 }
 
 
@@ -393,7 +397,7 @@ screen and (-ms-high-contrast: none) {
     border: 1px solid #22A5FF;
     border-radius: 1.5rem;
     background-color: #22A5FF;
-    color: #fff;
+    color: #f7fcfd;
     font: 700 0.75rem/1.75rem "Raleway", sans-serif;
     cursor: pointer;
     transition: all 0.2s;
@@ -1075,7 +1079,7 @@ screen and (-ms-high-contrast: none) {
     position: relative;
     width: auto;
     height: auto;
-    color: #fff;
+    color: #f7fcfd;
     opacity: 1;
 }
 
@@ -1099,7 +1103,7 @@ screen and (-ms-high-contrast: none) {
 }
 
 .lightbox-basic a.mfp-close.as-button:hover {
-    color: #fff;
+    color: #f7fcfd;
 }
 
 
@@ -1251,7 +1255,7 @@ screen and (-ms-high-contrast: none) {
     width: 13.75rem;
     padding: 0.3125rem 0 0.3125rem 4.125rem;
     background-color: #22A5FF;
-    color: #fff;
+    color: #f7fcfd;
     -webkit-transform: rotate(45deg) translate3d(0, 0, 0);
     -ms-transform: rotate(45deg) translate3d(0, 0, 0);
     transform: rotate(45deg) translate3d(0, 0, 0);
@@ -1563,7 +1567,7 @@ screen and (-ms-high-contrast: none) {
 }
 
 .basic-4 .fa-stack-1x {
-    color: #fff;
+    color: #f7fcfd;
     transition: all 0.2s ease;
 }
 
@@ -1572,7 +1576,7 @@ screen and (-ms-high-contrast: none) {
 }
 
 .basic-4 .fa-stack:hover .fa-stack-1x {
-    color: #fff;
+    color: #f7fcfd;
 }
 
 
@@ -1671,7 +1675,7 @@ screen and (-ms-high-contrast: none) {
 }
 
 .footer .fa-stack .fa-stack-1x {
-    color: #fff;
+    color: #f7fcfd;
     transition: all 0.2s ease;
 }
 
@@ -1681,7 +1685,7 @@ screen and (-ms-high-contrast: none) {
 }
 
 .footer .fa-stack:hover .fa-stack-1x {
-    color: #fff;
+    color: #f7fcfd;
 }
 
 .footer .fa-stack:hover .fa-stack-2x {
@@ -1833,7 +1837,7 @@ a:hover.back-to-top {
     text-align: center;
 }
 
-.li-space-lg li {
+.home #contact .li-space-lg li {
     margin-bottom: 0.25rem;
     align-items: center;
     justify-content: center;
@@ -1843,6 +1847,30 @@ a:hover.back-to-top {
     display: -webkit-flex;
     display: flex;
     text-align: center;
+}
+
+.footer-col.middle .li-space-lg li {
+    margin-bottom: 0.25rem;
+    align-items: center;
+    justify-content: center;
+    display: -webkit-box;
+    display: -moz-box;
+    text-align: center;
+}
+
+.home .li-space-lg.contact {
+    flex-direction: column;
+}
+
+.home #contact .li-space-lg.contact li {
+    display: block!important;
+    margin-left: 40px!important;
+    text-align: left;
+}
+
+.home #contact .li-space-lg.contact li.address {
+    display: block!important;
+    margin-left: 20px!important;
 }
 
 .footer .list-unstyled .media-body {
@@ -1900,8 +1928,19 @@ a:hover.back-to-top {
         margin-bottom: 0.25rem;
         text-align: left;
     }
+    .footer-col.middle .li-space-lg li {
+        margin-bottom: 0.25rem;
+        align-items: center;
+        justify-content: center;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        text-align: left;
+    }
     .footer .list-unstyled .media-body {
-        display: inline-block;
+        display: inline-block!important;
     }
     .footer {
         text-align: left;
@@ -2027,7 +2066,7 @@ a:hover.back-to-top {
         font-size: 1.5rem;
     }
     .navbar-expand-lg .navbar-nav .nav-link {
-        text-shadow: -2px 2px 2px rgba(0, 0, 0, .3);
+        text-shadow: -1px 1px 1px rgba(0, 0, 0, .3);
     }
     .top-nav-collapse .navbar-nav .nav-link,
     .navbar-expand-lg .navbar-nav .nav-item.button a {
@@ -2036,6 +2075,7 @@ a:hover.back-to-top {
     /* Navigation */
     .top-nav-collapse .nav-item.button a {
         background-color: #22A5FF!important;
+        border: 1px solid #22A5FF;
     }
     .top-nav-collapse .nav-item.button a {
         color: #f7fcfd!important;
@@ -2057,12 +2097,12 @@ a:hover.back-to-top {
     }
     .navbar-custom .nav-item .nav-link {
         padding: 0.75rem;
-        color: #fff;
+        color: #f7fcfd;
         opacity: 0.8;
     }
     .navbar-custom .nav-item .nav-link:hover,
     .navbar-custom .nav-item .nav-link.active {
-        color: #fff;
+        color: #f7fcfd;
         opacity: 1;
     }
     .navbar-custom.top-nav-collapse {
@@ -2117,11 +2157,11 @@ a:hover.back-to-top {
         transition: all 0.2s ease;
     }
     .navbar-custom .fa-stack-1x {
-        color: #fff;
+        color: #f7fcfd;
         transition: all 0.2s ease;
     }
     .navbar-custom .fa-stack:hover .fa-stack-2x {
-        color: #fff;
+        color: #f7fcfd;
     }
     .navbar-custom .fa-stack:hover .fa-stack-1x {
         color: #22A5FF;
@@ -2130,13 +2170,13 @@ a:hover.back-to-top {
         color: #22A5FF;
     }
     .navbar-custom.top-nav-collapse .fa-stack-1x {
-        color: #fff;
+        color: #f7fcfd;
     }
     .navbar-custom.top-nav-collapse .fa-stack:hover .fa-stack-2x {
         color: #00a7bd;
     }
     .navbar-custom.top-nav-collapse .fa-stack:hover .fa-stack-1x {
-        color: #fff;
+        color: #f7fcfd;
     }
     /* end of navigation */
     /* General Styles */
@@ -2452,7 +2492,7 @@ a:hover.back-to-top {
 }
 
 .virtual-hub .container .content {
-    padding: 4rem 0;
+    padding: 4rem 15px;
     margin: 0 auto;
 }
 
@@ -2464,6 +2504,10 @@ a:hover.back-to-top {
 
 .has-error .list-unstyled li {
     color: red;
+}
+
+.navbar-custom .nav-item .nav-link:hover {
+    color: #22A5FF!important;
 }
 
 .nav-item.button a {
@@ -2531,6 +2575,8 @@ a:hover.back-to-top {
     font: 600 1rem/1rem "Raleway", sans-serif;
     text-decoration: none;
     background-color: #22A5FF!important;
+    border: 1px solid #22A5FF;
+    padding: 0.75rem;
 }
 
 .error .nav-item.button a:hover {
@@ -2538,4 +2584,9 @@ a:hover.back-to-top {
     font: 600 1rem/1rem "Raleway", sans-serif;
     text-decoration: none;
     color: #22A5FF!important;
+}
+
+.form-control-submit-button {
+    width: 150px;
+    margin: 0 auto;
 }

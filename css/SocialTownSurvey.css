@@ -5,6 +5,10 @@ body {
     margin: 0;
 }
 
+input:focus {
+    outline: none!important;
+}
+
 .site-logo img {
     width: auto;
     height: 112px;
